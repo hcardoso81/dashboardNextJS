@@ -17,6 +17,7 @@ const navConfig = [
     path: '/user',
     icon: icon('ic_user'),
   },
+  /*
   {
     title: 'product',
     path: '/products',
@@ -27,6 +28,7 @@ const navConfig = [
     path: '/blog',
     icon: icon('ic_blog'),
   },
+  */
   {
     title: 'login',
     path: '/login',

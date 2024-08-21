@@ -26,6 +26,8 @@ export default function Header({ onOpenNav }) {
 
   const lgUp = useResponsive('up', 'lg');
 
+  const show = false;
+
   const renderContent = (
     <>
       {!lgUp && (
@@ -34,7 +36,11 @@ export default function Header({ onOpenNav }) {
         </IconButton>
       )}
 
+      {show && (
+
       <Searchbar />
+
+      )}
 
       <Box sx={{ flexGrow: 1 }} />
 
