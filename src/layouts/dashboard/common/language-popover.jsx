@@ -13,6 +13,7 @@ const LANGS = [
     label: 'English',
     icon: '/assets/icons/ic_flag_en.svg',
   },
+  /*
   {
     value: 'de',
     label: 'German',
@@ -23,6 +24,7 @@ const LANGS = [
     label: 'French',
     icon: '/assets/icons/ic_flag_fr.svg',
   },
+  */
 ];
 
 // ----------------------------------------------------------------------
