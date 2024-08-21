@@ -33,6 +33,8 @@ export default function LoginView() {
     router.push('/dashboard');
   };
 
+  const show=false;
+
   const renderForm = (
     <>
       <Stack spacing={3}>
@@ -108,6 +110,8 @@ export default function LoginView() {
             </Link>
           </Typography>
 
+          {show && (
+
           <Stack direction="row" spacing={2}>
             <Button
               fullWidth
@@ -140,11 +144,18 @@ export default function LoginView() {
             </Button>
           </Stack>
 
+          )}
+
+          {show && (
+
           <Divider sx={{ my: 3 }}>
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
               OR
             </Typography>
           </Divider>
+
+          )}
+     
 
           {renderForm}
         </Card>
