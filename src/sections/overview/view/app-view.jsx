@@ -19,6 +19,7 @@ import AppConversionRates from '../app-conversion-rates';
 // ----------------------------------------------------------------------
 
 export default function AppView() {
+  const show = false;
   return (
     <Container maxWidth="xl">
       <Typography variant="h4" sx={{ mb: 5 }}>
@@ -103,7 +104,7 @@ export default function AppView() {
             }}
           />
         </Grid>
-
+{show && (
         <Grid xs={12} md={6} lg={4}>
           <AppCurrentVisits
             title="Current Visits"
@@ -116,7 +117,8 @@ export default function AppView() {
               ],
             }}
           />
-        </Grid>
+        </Grid> ) }
+{show && (
 
         <Grid xs={12} md={6} lg={8}>
           <AppConversionRates
@@ -137,7 +139,9 @@ export default function AppView() {
               ],
             }}
           />
-        </Grid>
+        </Grid> ) }
+
+{show && (
 
         <Grid xs={12} md={6} lg={4}>
           <AppCurrentSubject
@@ -153,6 +157,8 @@ export default function AppView() {
           />
         </Grid>
 
+) }
+{show && (
         <Grid xs={12} md={6} lg={8}>
           <AppNewsUpdate
             title="News Update"
@@ -165,7 +171,8 @@ export default function AppView() {
             }))}
           />
         </Grid>
-
+) } 
+{show && (
         <Grid xs={12} md={6} lg={4}>
           <AppOrderTimeline
             title="Order Timeline"
@@ -183,6 +190,8 @@ export default function AppView() {
             }))}
           />
         </Grid>
+) }
+{show && (
 
         <Grid xs={12} md={6} lg={4}>
           <AppTrafficBySite
@@ -212,6 +221,9 @@ export default function AppView() {
           />
         </Grid>
 
+) }
+{show && (
+
         <Grid xs={12} md={6} lg={8}>
           <AppTasks
             title="Tasks"
@@ -224,6 +236,7 @@ export default function AppView() {
             ]}
           />
         </Grid>
+)}
       </Grid>
     </Container>
   );
