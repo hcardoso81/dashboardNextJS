@@ -16,19 +16,25 @@ export default function AppDetailsEvent() {
     >
       <Grid container>
         <Grid item xs={12} sm={3} md={3} sx={{ mt: { xs: 2 } }}>
-          <Typography variant="inherit">Atlas vs Santos 2024</Typography>
-          <Typography variant="inherit">Equipo: Atlas masculino</Typography>
-          <Typography variant="inherit">Rival: Santos</Typography>
+          <Typography variant="inherit">
+            <strong>Atlas vs Santos 2024:</strong>
+          </Typography>
+          <Typography variant="inherit">
+            <strong>Equipo:</strong> Atlas masculino
+          </Typography>
+          <Typography variant="inherit">
+            <strong>Rival:</strong> Santos
+          </Typography>
         </Grid>
         <Grid item xs={12} sm={3} md={3} sx={{ mt: { xs: 2 } }}>
-          <Typography variant="inherit">Liga: LIga Mx</Typography>
-          <Typography variant="inherit">Temporada 2024</Typography>
-          <Typography variant="inherit">Partido 5/8</Typography>
+          <Typography variant="inherit"><strong>Liga</strong>: Liga Mx</Typography>
+          <Typography variant="inherit"><strong>Temporada</strong>: Temporada 2024</Typography>
+          <Typography variant="inherit"><strong>Partido</strong>: 5/8</Typography>
         </Grid>
         <Grid item xs={12} sm={3} md={3} sx={{ mt: { xs: 2 } }}>
-          <Typography variant="inherit">Fecha: 10/06/2021</Typography>
-          <Typography variant="inherit">Hora: 19:05 (-6)</Typography>
-          <Typography variant="inherit">Estadio Jalisco</Typography>
+          <Typography variant="inherit"><strong>Fecha</strong>: 10/06/2021</Typography>
+          <Typography variant="inherit"><strong>Hora</strong>: 19:05 (-6)</Typography>
+          <Typography variant="inherit"><strong>Estadio</strong>: Jalisco</Typography>
         </Grid>
         <Grid
           item

@@ -30,21 +30,19 @@ export default function AppView() {
         </Typography>
       )}
 
-      <Grid container  sx={{ my: 2 }}> 
+      <Grid sx={{ my: 2 }}>
         <AppFiltersEvent />
       </Grid>
 
-      <Grid container sx={{ my: 4 }} > 
+      <Grid sx={{ my: 4 }}>
         <AppDetailsEvent />
       </Grid>
 
-      <Grid container sx={{ my: 2 }} > 
+      <Grid sx={{ my: 2 }}>
         <AppDetailsSales />
       </Grid>
       <Grid container spacing={3}>
-
-
-      <Grid xs={12} md={6}>
+        <Grid xs={12} md={6}>
           <AppWebsiteVisits
             title="Entradas vendidas por tribunas"
             subheader="(+43%) than last year"
@@ -86,10 +84,7 @@ export default function AppView() {
           />
         </Grid>
 
-
-
-
-        <Grid xs={12} md={6} >
+        <Grid xs={12} md={6}>
           <AppWebsiteVisits
             title="Monto vendido por tribuna boletas"
             subheader="(+43%) than last year"

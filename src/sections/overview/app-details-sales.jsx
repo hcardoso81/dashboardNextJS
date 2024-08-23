@@ -17,11 +17,11 @@ export default function AppDetailsSales() {
         >
           <Typography variant="h5">Tickets Vendidos</Typography>
           <Typography mt={2} variant="inherit">
-            Boletos: 2,000
+            <strong>Boletos</strong>: 2,000
           </Typography>
-          <Typography variant="inherit">Abones: 1,000</Typography>
+          <Typography variant="inherit"><strong>Abonos</strong>: 1,000</Typography>
           <Typography mt={2} variant="subtitle1">
-            TOTAL: 3,000/ 4,000
+            <strong>TOTAL</strong>: 3,000/ 4,000
           </Typography>
         </Card>
       </Grid>
@@ -53,11 +53,11 @@ export default function AppDetailsSales() {
             <Grid xs={12} sm={6} md={6}>
               <Typography variant="h5">Ocupación</Typography>
               <Typography mt={2} variant="inherit">
-                Boletos: 1,900
+                <strong>Boletos</strong>: 1,900
               </Typography>
-              <Typography variant="inherit">Abones: 957</Typography>
+              <Typography variant="inherit"><strong>Abonos</strong>: 957</Typography>
               <Typography mt={2} variant="subtitle1">
-                TOTAL: 2,857/ 4,000
+                <strong>TOTAL</strong>: 2,857/ 4,000
               </Typography>
             </Grid>
             <Grid
