@@ -11,9 +11,13 @@ export default function AppFiltersEvent() {
           id="combo-box-team"
           options={teams}
           PaperComponent={(props) => (
-            <Paper {...props} sx={{ border: '1px solid #ccc', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }} />
+            <Paper
+              {...props}
+              sx={{ border: '1px solid #ccc', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }}
+            />
           )}
           renderInput={(params) => <TextField {...params} label="Equipo" fullWidth />}
+          sx={{ backgroundColor: 'white' }}
         />
       </Grid>
       <Grid item xs={12} sm={3} md={3}>
@@ -22,9 +26,13 @@ export default function AppFiltersEvent() {
           id="combo-box-league"
           options={leagues}
           PaperComponent={(props) => (
-            <Paper {...props} sx={{ border: '1px solid #ccc', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }} />
+            <Paper
+              {...props}
+              sx={{ border: '1px solid #ccc', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }}
+            />
           )}
           renderInput={(params) => <TextField {...params} label="Liga" fullWidth />}
+          sx={{ backgroundColor: 'white' }}
         />
       </Grid>
       <Grid item xs={12} sm={3} md={3}>
@@ -33,9 +41,13 @@ export default function AppFiltersEvent() {
           id="combo-box-seasson"
           options={seasons}
           PaperComponent={(props) => (
-            <Paper {...props} sx={{ border: '1px solid #ccc', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }} />
+            <Paper
+              {...props}
+              sx={{ border: '1px solid #ccc', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }}
+            />
           )}
           renderInput={(params) => <TextField {...params} label="Temporada" fullWidth />}
+          sx={{ backgroundColor: 'white' }}
         />
       </Grid>
       <Grid item xs={12} sm={3} md={3}>
@@ -44,9 +56,13 @@ export default function AppFiltersEvent() {
           id="combo-box-event"
           options={events}
           PaperComponent={(props) => (
-            <Paper {...props} sx={{ border: '1px solid #ccc', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }} />
+            <Paper
+              {...props}
+              sx={{ border: '1px solid #ccc', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }}
+            />
           )}
           renderInput={(params) => <TextField {...params} label="Evento" fullWidth />}
+          sx={{ backgroundColor: 'white' }}
         />
       </Grid>
     </Grid>

@@ -10,11 +10,14 @@ export default function selectOde() {
       disablePortal
       id="combo-box-ode"
       options={odes}
-      sx={{ width: 300 }}
       PaperComponent={(props) => (
-        <Paper {...props} sx={{ border: '1px solid #ccc', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }} />
+        <Paper
+          {...props}
+          sx={{ border: '1px solid #ccc', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }}
+        />
       )}
       renderInput={(params) => <TextField {...params} label="Ode" />}
+      sx={{ width: 300, backgroundColor: 'white' }}
     />
   );
 }
@@ -22,5 +25,4 @@ export default function selectOde() {
 const odes = [
   { label: 'Boca Junniors', year: 1994 },
   { label: 'Atles', year: 1972 },
-
 ];
