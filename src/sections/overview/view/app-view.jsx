@@ -8,6 +8,7 @@ import Iconify from 'src/components/iconify';
 
 import AppTasks from '../app-tasks';
 import AppNewsUpdate from '../app-news-update';
+import AppDetailsEvent from '../app-detail-event';
 import AppFiltersEvent from '../app-filters-event';
 import AppOrderTimeline from '../app-order-timeline';
 import AppCurrentVisits from '../app-current-visits';
@@ -29,8 +30,12 @@ export default function AppView() {
         </Typography>
       )}
 
-      <Grid container > 
+      <Grid container  sx={{ my: 2 }}> 
         <AppFiltersEvent />
+      </Grid>
+
+      <Grid container sx={{ my: 4 }} > 
+        <AppDetailsEvent />
       </Grid>
       <Grid container spacing={3}>
         <Grid xs={12} sm={6} md={6}>

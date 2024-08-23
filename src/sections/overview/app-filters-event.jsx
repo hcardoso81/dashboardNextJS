@@ -4,13 +4,13 @@ import { Grid, TextField, Autocomplete } from '@mui/material';
 
 export default function AppFiltersEvent() {
   return (
-    <Grid container spacing={4} sx={{ my: 3 }}>
+    <Grid container spacing={4}>
       <Grid item xs={12} sm={3} md={3}>
         <Autocomplete
           disablePortal
           id="combo-box-team"
           options={teams}
-          sx={{ width: '100%' }} 
+          sx={{ width: '100%' }}
           renderInput={(params) => <TextField {...params} label="Equipo" fullWidth />}
         />
       </Grid>
@@ -19,7 +19,7 @@ export default function AppFiltersEvent() {
           disablePortal
           id="combo-box-league"
           options={leagues}
-          sx={{ width: '100%' }} 
+          sx={{ width: '100%' }}
           renderInput={(params) => <TextField {...params} label="Liga" fullWidth />}
         />
       </Grid>
@@ -27,8 +27,8 @@ export default function AppFiltersEvent() {
         <Autocomplete
           disablePortal
           id="combo-box-seasson"
-          options={seassons}
-          sx={{ width: '100%' }} 
+          options={seasons}
+          sx={{ width: '100%' }}
           renderInput={(params) => <TextField {...params} label="Temporada" fullWidth />}
         />
       </Grid>
@@ -37,7 +37,7 @@ export default function AppFiltersEvent() {
           disablePortal
           id="combo-box-event"
           options={events}
-          sx={{ width: '100%' }} 
+          sx={{ width: '100%' }}
           renderInput={(params) => <TextField {...params} label="Evento" fullWidth />}
         />
       </Grid>
@@ -55,13 +55,12 @@ const leagues = [
   { id: 2, label: 'Liga 2' },
 ];
 
-const seassons = [
-    { id: 1, label: 'Seasson 1' },
-    { id: 2, label: 'Seasson 2' },
-  ];
+const seasons = [
+  { id: 1, label: 'Seasson 1' },
+  { id: 2, label: 'Seasson 2' },
+];
 
-  const events = [
-    { id: 1, label: 'Evento 1' },
-    { id: 2, label: 'Evento 2' },
-  ];
-  
+const events = [
+  { id: 1, label: 'Evento 1' },
+  { id: 2, label: 'Evento 2' },
+];
