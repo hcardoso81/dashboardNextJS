@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Paper } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 
@@ -10,6 +11,9 @@ export default function selectOde() {
       id="combo-box-ode"
       options={odes}
       sx={{ width: 300 }}
+      PaperComponent={(props) => (
+        <Paper {...props} sx={{ border: '1px solid #ccc', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }} />
+      )}
       renderInput={(params) => <TextField {...params} label="Ode" />}
     />
   );

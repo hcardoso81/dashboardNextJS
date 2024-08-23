@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Grid, TextField, Autocomplete } from '@mui/material';
+import { Grid, Paper, TextField, Autocomplete } from '@mui/material';
 
 export default function AppFiltersEvent() {
   return (
@@ -10,7 +10,9 @@ export default function AppFiltersEvent() {
           disablePortal
           id="combo-box-team"
           options={teams}
-          sx={{ width: '100%' }}
+          PaperComponent={(props) => (
+            <Paper {...props} sx={{ border: '1px solid #ccc', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }} />
+          )}
           renderInput={(params) => <TextField {...params} label="Equipo" fullWidth />}
         />
       </Grid>
@@ -19,7 +21,9 @@ export default function AppFiltersEvent() {
           disablePortal
           id="combo-box-league"
           options={leagues}
-          sx={{ width: '100%' }}
+          PaperComponent={(props) => (
+            <Paper {...props} sx={{ border: '1px solid #ccc', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }} />
+          )}
           renderInput={(params) => <TextField {...params} label="Liga" fullWidth />}
         />
       </Grid>
@@ -28,7 +32,9 @@ export default function AppFiltersEvent() {
           disablePortal
           id="combo-box-seasson"
           options={seasons}
-          sx={{ width: '100%' }}
+          PaperComponent={(props) => (
+            <Paper {...props} sx={{ border: '1px solid #ccc', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }} />
+          )}
           renderInput={(params) => <TextField {...params} label="Temporada" fullWidth />}
         />
       </Grid>
@@ -37,7 +43,9 @@ export default function AppFiltersEvent() {
           disablePortal
           id="combo-box-event"
           options={events}
-          sx={{ width: '100%' }}
+          PaperComponent={(props) => (
+            <Paper {...props} sx={{ border: '1px solid #ccc', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }} />
+          )}
           renderInput={(params) => <TextField {...params} label="Evento" fullWidth />}
         />
       </Grid>
